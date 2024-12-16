@@ -170,6 +170,11 @@ public class PhysicsEngine : MonoBehaviour
                         {
                             restitution = 0;
                         }
+                        else 
+                        {
+                            restitution = (objectCorrectedA.Bounciness * objectCorrectedB.Bounciness);
+                        }
+
 
                         float deltaV1D = (1.0f + restitution) * velDotNormal;
 

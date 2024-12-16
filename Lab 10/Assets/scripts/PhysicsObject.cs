@@ -12,6 +12,8 @@ public class PhysicsObject : MonoBehaviour
     public float drag = 0.1f;
     [Range(0.0f, 1.0f)]
     public float grippiness = 0.5f;
+    [Range(0.0f, 1.0f)]
+    public float Bounciness = 0.5f;
 
     public float gravityScale = 1;
     public Vector3 velocity = Vector3.zero;
